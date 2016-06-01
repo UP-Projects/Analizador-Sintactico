@@ -89,13 +89,20 @@ p{
 
 
 .inicio{
-	position: relative;
+	/*position: relative;
 	display: block;
 	height: 70px;
 	width: 120px;
 	border-radius: 500px;
 	background-color: rgb(254, 254, 254);
-	margin-bottom: 5px;
+	margin-bottom: 5px;*/
+
+	width: 250px;
+	height: 100px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #5cb85c;
 }
 
 .begin{
@@ -116,4 +123,13 @@ p{
 	border-radius: 500px;
 	background-color: rgb(254, 254, 254);
 	margin-bottom: 5px;
+}
+/*FORMAS*/
+.oval{
+     width: 250px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
 }

@@ -63,7 +63,7 @@ function analizaSwitch() {
 					divCreator(aux,sumary);
 				break;
 
-				case digit:
+				case 'digit':
 					console.log("Recibio: "+aux);
 					divCreator(aux,sumary);
 				break;
@@ -176,8 +176,7 @@ function divCreator(aux, sumary){
     var text = document.createTextNode(aux);
     var conta = sumary;
 
-    div.className = 'inicio borrar';
-	// div.className = 'borrar'
+    div.className = 'oval';
     div.id = "idAux"+conta;
     ptag.className = 'centrado-tag-p';
     conta++;
