@@ -17,7 +17,7 @@ p{
 .centrado-tag-p{
 	font-family: Roboto;
 	position: absolute;
-	color: rgb(116, 116, 116);
+	color: rgb(0, 0, 0);
  	top: 50%;
  	left: 50%;
  	transform: translate(-50%, -50%);
@@ -48,6 +48,7 @@ p{
 	width: 850px;
 	height: 100vh;
 	background-color: #cdcdcd;
+	padding: 15px;
 	/*width: 60%;*/
 	/*margin: 0 auto;*/
 }
@@ -88,22 +89,7 @@ p{
 }
 
 
-.inicio{
-	/*position: relative;
-	display: block;
-	height: 70px;
-	width: 120px;
-	border-radius: 500px;
-	background-color: rgb(254, 254, 254);
-	margin-bottom: 5px;*/
 
-	width: 250px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	background: #5cb85c;
-}
 
 .begin{
 	position: relative;
@@ -125,11 +111,81 @@ p{
 	margin-bottom: 5px;
 }
 /*FORMAS*/
-.oval{
-     width: 250px;
-     height: 100px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #5cb85c;
+.INICIO{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgb(254, 254, 254);
+	margin-bottom: 5px;
+}
+
+.Input{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 50px;
+  	transform: skew(-20deg);
+	background-color: rgb(153, 245, 95);
+	margin-bottom: 5px;
+}
+
+.var{
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 60px;
+  	/*transform: skew(-20deg);*/
+	background-color: rgb(133, 69, 196);
+	margin-bottom: 5px;
+}
+
+
+.If {
+	width: 90px;
+	height: 90px;
+	color: #428bca;
+	transform: rotate(45deg);
+	background-color: rgb(87, 186, 136);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.If .centrado-tag-p {
+	transform: rotate(-45deg);
+	background-color: rgba(87, 186, 136, 0);
+	margin-top: -20px;
+	margin-left: -20px;
+}
+.FIN{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgb(254, 254, 254);
+	margin-bottom: 5px;
+}
+
+
+.Output {
+   margin: 15px;
+   width: 100px;
+   height: 80px;
+   background: rgb(177, 68, 127);
+   position: relative;
+   border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.Output:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 0px;
+   width: 0;
+   height: 0;
+   border-top: 40px solid transparent;
+   border-right: 26px solid rgb(177, 68, 127);
+   border-bottom: 40px solid transparent;
 }

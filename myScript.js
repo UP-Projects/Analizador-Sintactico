@@ -176,8 +176,8 @@ function divCreator(aux, sumary){
     var text = document.createTextNode(aux);
     var conta = sumary;
 
-    div.className = 'oval';
     div.id = "idAux"+conta;
+	div.className = aux;
     ptag.className = 'centrado-tag-p';
     conta++;
     ptag.appendChild(text);
