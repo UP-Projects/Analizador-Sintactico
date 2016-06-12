@@ -124,14 +124,15 @@ p{
 .Input{
 	position: relative;
 	display: block;
-	width: 100px;
+	width: 150px;
 	height: 50px;
   	transform: skew(-20deg);
 	background-color: rgb(153, 245, 95);
 	margin-bottom: 5px;
+	padding: 10px;
 }
 
-.var{
+.Var{
 	position: relative;
 	display: block;
 	width: 150px;
@@ -188,4 +189,15 @@ p{
    border-top: 40px solid transparent;
    border-right: 26px solid rgb(177, 68, 127);
    border-bottom: 40px solid transparent;
+}
+
+.For{
+	margin: 15px;
+     /*width: 100px;
+     height: 70px;*/
+	 width: 0;
+     height: 0px;
+     border-left: 100px solid #428bca;
+     border-top: 50px solid #f0ad4e;
+     border-bottom: 50px solid #d9534f;
 }

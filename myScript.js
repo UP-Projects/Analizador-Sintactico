@@ -157,11 +157,12 @@ function analizaSwitch() {
 				break;
 
 				default:
-				flag=1;
-				if(/[0-9]/g.test(aux)){
-					console.log("Recibido:DIGIT");
-					console.log("Recibio: "+aux);
-					divCreator(aux,sumary);
+					//alert("Token no reconocido: "+aux);
+					flag=1;
+					if(/[0-9]/g.test(aux)){
+						console.log("Recibido:DIGIT");
+						console.log("Recibio: "+aux);
+						divCreator(aux,sumary);
 				}
 			}
 		}
@@ -178,6 +179,7 @@ function divCreator(aux, sumary){
 
     div.id = "idAux"+conta;
 	div.className = aux;
+	// document.getElementById('idAux'+conta).setAttribute("class", "aux");
     ptag.className = 'centrado-tag-p';
     conta++;
     ptag.appendChild(text);
