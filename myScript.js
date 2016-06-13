@@ -176,8 +176,8 @@ function divCreator(aux, sumary){
     var ptag = document.createElement('p');
     var text = document.createTextNode(aux);
     var conta = sumary;
-
-    div.id = "idAux"+conta;
+	var divID = "idAux"+conta;
+    div.id = divID;
 	div.className = aux;
 	// document.getElementById('idAux'+conta).setAttribute("class", "aux");
     ptag.className = 'centrado-tag-p';
@@ -187,15 +187,16 @@ function divCreator(aux, sumary){
     document.getElementById('flowchart').appendChild(div);
 }
 
-var c = 0;
+var c = 1;
 document.addEventListener("trash", limpiar);
 function limpiar(){
-	var currentID = 'idAux'+c;
+	var divID = "idAux"+1;
 	for (var i = 0; i <= sumary; i++) {
+		var currentID = 'idAux'+c;
 		var child = document.getElementById(currentID);
-		// var father = document.getElementById('flowchart');
-		// father.remove(child);
+		var father = document.getElementById('flowchart');
+		father.removeChild(child);
+		c++;
+		console.log("Elemento eliminado: "+currentID);
 	}
-	console.log(currentID);
-	c++;
 }
