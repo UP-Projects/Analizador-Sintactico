@@ -1,147 +1,98 @@
+/*A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X,Y,Z*/
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 *{
-	padding: 0px;
-	margin: 0px;
-	background-color: #cdcdcd;
+    margin: 0;
+    padding: 0;
 }
-p{
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.borrado-fail{
-	display: none;
+.btn-plane{
+    position: relative;
+	background-color: #b91944;
+	width: 50px;
+	height: 50px;
+	border-radius: 500px;
+    z-index: 1;
+    float: right;
+    margin: 10px;
 }
 
 .centrado-tag-p{
-	font-family: Roboto;
-	position: absolute;
-	color: rgb(0, 0, 0);
- 	top: 50%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
-}
+  	font-family: Roboto;
+  	position: absolute;
+  	color: rgb(0, 0, 0);
+   	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%, -50%);
+  }
 
 .fa-paper-plane{
     color: #fff;
 	background-color: rgba(0, 0, 0, 0);
-	margin-top: 13px;
-	margin-left: 4px;
+	margin-top: 11px;
+    margin-left: 5px;
 }
 .fa-trash{
-	color: #d50000;
-	position: relative;
-	margin-left: 500px;
-	float: right;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+    margin-right: 15px;
 }
 .fa-trash:hover{
-	color: #dd2121;
+    color: #b91944;
+}
+.header{
+    background-color: rgb(78, 109, 222);
+}
+.input{
+    position: relative;
+    height: 95vh;
+	background-color: #273238;
+}
+.output{
+    position: relative;
+    height: 94vh;
+    padding: 15px;
+    background-color: #cdcdcd;
+    overflow-y: scroll;
 }
 
-
-.flowchart{
-	position: absolute;
-	margin-left: 600px;
-	margin-top: 50px;
-	display: inline-block;
-	width: 850px;
-	height: 100vh;
-	background-color: #cdcdcd;
-	padding: 15px;
-	/*width: 60%;*/
-	/*margin: 0 auto;*/
-}
-
-/*input{
-	display: inline-block;
-}*/
-
-#txtAreaEntrada{
-	position: fixed;
-	display: inline-block;;
+.txtEntrada{
+    position: absolute;
+    height: 90%;
+    width: 93%;
     padding: 10px;
+    font-size: 20px;
 	font-family: Khula;
-	font-size: 20px;
-	background: #273238;
+	background-color: #273238;
 	overflow: hidden;
 	color: #DED064;
-	height: 100vh;
-	/*color: #b91944;*/
+    outline: 1px solid #273238;
+    resize: none;
 }
 
-
-.send-button{
-    position: absolute;
-	left: 485px;
-	top: 10px;
-    color: #b91944;
-	background-color: #b91944;
-	width: 100px;
-	height: 100px;
-	border-radius: 500px;
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    .input{
+        height: 47vh;
+    }
+    .output {
+        height: 47vh;
+    }
 }
 
-.seccion1{
-	width: auto;
-	height: 100vh;
-	display: inline-block;
-}
-
-
-
-
-.begin{
-	position: relative;
-	display: block;
-	height: 70px;
-	width: 120px;
-	border-radius: 500px;
-	background-color: rgb(254, 254, 254);
-	margin-bottom: 5px;
-}
-
-.end{
-	position: relative;
-	display: block;
-	height: 70px;
-	width: 120px;
-	border-radius: 500px;
-	background-color: rgb(254, 254, 254);
-	margin-bottom: 5px;
-}
 /*FORMAS*/
 .INICIO{
-	position: relative;
-	display: block;
 	width: 100px;
 	height: 50px;
 	border-radius: 50%;
 	background-color: rgb(254, 254, 254);
+    margin-top: 50px;
 	margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-.Input{
-	position: relative;
-	display: block;
-	width: 150px;
-	height: 50px;
-  	transform: skew(-20deg);
-	background-color: rgb(153, 245, 95);
-	margin-bottom: 5px;
-	padding: 10px;
-}
-
-.Var{
-	position: relative;
-	display: block;
-	width: 150px;
-	height: 60px;
-  	/*transform: skew(-20deg);*/
-	background-color: rgb(133, 69, 196);
-	margin-bottom: 5px;
-}
-
 
 .If {
 	width: 90px;
@@ -150,33 +101,65 @@ p{
 	transform: rotate(45deg);
 	background-color: rgb(87, 186, 136);
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 80px;
+    position: relative;
+    left: 43%;
 }
+
 .If .centrado-tag-p {
 	transform: rotate(-45deg);
-	background-color: rgba(87, 186, 136, 0);
 	margin-top: -20px;
 	margin-left: -20px;
 }
-.FIN{
+
+.Input{
 	position: relative;
-	display: block;
+	width: 150px;
+	height: 50px;
+  	transform: skew(-20deg);
+	background-color: rgb(153, 245, 95);
+	margin-bottom: 5px;
+	padding: 10px;
+    left: 35%;
+}
+
+.FIN{
 	width: 100px;
 	height: 50px;
 	border-radius: 50%;
 	background-color: rgb(254, 254, 254);
 	margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.For{
+	margin: 15px;
+    margin-top: 20px;
+	 width: 0;
+     height: 0px;
+     border-left: 100px solid #428bca;
+     border-top: 50px solid #f0ad4e;
+     border-bottom: 50px solid #d9534f;
+     position: relative;
+     left: 45%;
+     transform: translate(-50%, -50%);
+}
+.For .centrado-tag-p {
+	margin-left: -80px;
+}
 
 .Output {
-   margin: 15px;
-   width: 100px;
-   height: 80px;
-   background: rgb(177, 68, 127);
-   position: relative;
-   border-top-right-radius: 30%;
-  border-bottom-right-radius: 30%;
+    margin: 15px;
+    width: 100px;
+    height: 80px;
+    background: rgb(177, 68, 127);
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .Output:before {
@@ -191,13 +174,13 @@ p{
    border-bottom: 40px solid transparent;
 }
 
-.For{
-	margin: 15px;
-     /*width: 100px;
-     height: 70px;*/
-	 width: 0;
-     height: 0px;
-     border-left: 100px solid #428bca;
-     border-top: 50px solid #f0ad4e;
-     border-bottom: 50px solid #d9534f;
+.Var{
+	width: 150px;
+	height: 60px;
+	background-color: rgb(133, 69, 196);
+    margin-top: 40px;
+	margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
